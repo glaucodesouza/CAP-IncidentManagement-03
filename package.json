@@ -7,9 +7,10 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4",
     "@sap/cds-hana": "^2",
-    "@sap/xssec": "^3"
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "jwt-decode": "^4.0.0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
@@ -43,6 +44,12 @@
               ]
             },
             "bob": {
+              "roles": [
+                "support"
+              ]
+            },
+            "glauco": {
+              "password": "12345",
               "roles": [
                 "support"
               ]
